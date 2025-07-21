@@ -90,21 +90,24 @@ a {
   margin-top: 50px;
 }
 /* 하단 */
-.footer{
-    padding: 30px 20px;
-    background-color: rgb(142, 142, 145);
+.footer {
+  padding: 30px 20px;
+  background-color: rgb(142, 142, 145);
 }
-.footer ul{
-    display: flex;
-    }
-.footer ul li a::after{
-    content: "";
-    display: inline-block;
-    width: 1px;
-    height: 12px;
-    background-color: #333;
-    margin: 0 20px;
+.footer ul {
+  display: flex;
 }
-.footer ul li:last-child a::after{
-    content: none;
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer ul li a::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #333;
+  margin: 0 20px;
+}
+.footer ul li:last-child a::after {
+  content: none;
 }
