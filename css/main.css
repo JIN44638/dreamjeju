@@ -20,11 +20,10 @@ a {
 .header {
   display: flex;
   background-color: rgb(62, 59, 112);
-  
 }
 .header > a {
-    padding-left: 20px;
-    width: 400px;
+  padding-left: 20px;
+  width: 400px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 100px;
   font-weight: bold;
@@ -32,11 +31,11 @@ a {
   color: aliceblue;
 }
 .top-menu {
-    position: relative;
-    width: 800px;
+  position: relative;
+  width: 800px;
 }
 .top-right {
-        width: 100%;
+  width: 100%;
   position: absolute;
   bottom: 0;
   right: 20px;
@@ -45,38 +44,67 @@ a {
   font-weight: bold;
   gap: 20px;
   background-color: rgb(196, 165, 127);
- }
- .top-right li{
-    width: calc(100% / 4);
-    padding: 10px 20px;
-    text-align: center;
- }
- .top-right li a{
-     color: antiquewhite;
- }
-.top-right > li:hover{
-    background-color: rgb(156, 153, 153);
+}
+.top-right li {
+  width: calc(100% / 4);
+  padding: 10px 20px;
+  text-align: center;
+}
+.top-right li a {
+  color: antiquewhite;
+}
+.top-right > li:hover {
+  background-color: rgb(156, 153, 153);
 }
 /* 메인 */
-.contents{
-   width: 100%;
-   background-color: antiquewhite;
+.contents {
+  width: 100%;
+  background-color: antiquewhite;
 }
-.hilling{
-     width: 100%; 
-     padding: 50px 50px;
+.hilling {
+  width: 100%;
+  padding: 50px 50px;
 }
-.description{
+.description {
+  display: flex;
+  margin-top: 20px;
+}
+.desc-img {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.desc-img img {
+  transition: all 0.3s;
+}
+.desc-img:hover img {
+  transform: scale(1.5);
+}
+.desc-detial {
+  width: 550px;
+  margin-left: 20px;
+}
+.detail-top > h2 {
+  margin-bottom: 15px;
+}
+.detail-bottom {
+  margin-top: 50px;
+}
+/* 하단 */
+.footer{
+    padding: 30px 20px;
+    background-color: rgb(142, 142, 145);
+}
+.footer ul{
     display: flex;
-    margin-top: 20px;
+    }
+.footer ul li a::after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    margin: 0 20px;
 }
-.desc-img img{
-    border-radius: 20px;
-}
-.desc-detial{
-    width: 550px;
-    margin-left: 20px;
-}
-.detail-bottom{
-    margin-top: 50px;
+.footer ul li:last-child a::after{
+    content: none;
 }
